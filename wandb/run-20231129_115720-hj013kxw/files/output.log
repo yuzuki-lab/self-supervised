@@ -1,0 +1,10 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/loss_acc.py", line 312, in <module>
+    main()
+  File "/home/yishido/self_supervied/loss_acc.py", line 203, in main
+    print(f"Data loaded: there are {len(train_dataset)} train images.")
+NameError: name 'train_dataset' is not defined

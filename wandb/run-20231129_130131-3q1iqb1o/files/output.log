@@ -1,0 +1,37 @@
+Data loaded: there are 50000 train images.
+Starting training !
+--------------------------------------------------------------------------------------------
+0epoch
+Loss: -0.6389593482017517
+k-NN acc: 0.2409
+Traceback (most recent call last):
+Exception in thread   File "/home/yishido/self_supervied/cifar_vit.py", line 312, in <module>
+    main()
+Thread-7 (_pin_memory_loop):
+  File "/home/yishido/self_supervied/cifar_vit.py", line 215, in main
+    acc = val(acc_train_loader,acc_val_loader,model,device)
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/cifar_vit.py", line 256, in val
+    (train_X, train_y, test_X, test_y) = get_features(model, acc_train_loader, acc_val_loader, 'cuda')
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/yishido/self_supervied/cifar_vit.py", line 290, in get_features
+    train_X, train_y = inference(train_loader, model, device)
+  File "/home/yishido/self_supervied/cifar_vit.py", line 269, in inference
+    for step, (x, y) in enumerate(loader):
+      File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+self.run()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/threading.py", line 953, in run
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+      File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+self._target(*self._args, **self._kwargs)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+KeyboardInterrupt
