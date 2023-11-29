@@ -112,7 +112,7 @@ def main():
     
     wandb.init(
         # set the wandb project where this run will be logged
-        project="self-supervised",
+        project="SimSiam",
         name='c_resnet',
         # tags=["pretrained"],
 

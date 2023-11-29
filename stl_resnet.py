@@ -112,13 +112,13 @@ def main():
     
     wandb.init(
         # set the wandb project where this run will be logged
-        project="self-supervised",
-        name='resnet',
+        project="SimSiam",
+        name='s_resnet',
         # tags=["pretrained"],
 
         # track hyperparameters and run metadata
         config={
-        "architecture": 's_resnet',
+        "architecture": 'resnet',
         "dataset": "STL10",
         "epochs": 100,
         })
