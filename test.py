@@ -47,19 +47,21 @@ class SimSiam(nn.Module):
 
         # create the encoder
         # num_classes is the output fc dimension, zero-initialize last BNs
-        self.encoder = base_encoder(num_classes=dim, zero_init_residual=True)
+        # self.encoder = base_encoder(num_classes=dim, zero_init_residual=True)
+        self.encoder = base_encoder##################
 
         # build a 3-layer projector
-        prev_dim = self.encoder.fc.weight.shape[1]
-        self.encoder.fc = nn.Sequential(nn.Linear(prev_dim, prev_dim, bias=False),
-                                        nn.BatchNorm1d(prev_dim),
-                                        nn.ReLU(inplace=True), # first layer
-                                        nn.Linear(prev_dim, prev_dim, bias=False),
-                                        nn.BatchNorm1d(prev_dim),
-                                        nn.ReLU(inplace=True), # second layer
-                                        self.encoder.fc,
-                                        nn.BatchNorm1d(dim, affine=False)) # output layer
-        self.encoder.fc[6].bias.requires_grad = False # hack: not use bias as it is followed by BN
+        # prev_dim = self.encoder.fc.weight.shape[1]
+        # prev_dim = 2048##################
+        # self.encoder.fc = nn.Sequential(nn.Linear(prev_dim, prev_dim, bias=False),
+        #                                 nn.BatchNorm1d(prev_dim),
+        #                                 nn.ReLU(inplace=True), # first layer
+        #                                 nn.Linear(prev_dim, prev_dim, bias=False),
+        #                                 nn.BatchNorm1d(prev_dim),
+        #                                 nn.ReLU(inplace=True), # second layer
+        #                                 self.encoder.fc,
+        #                                 nn.BatchNorm1d(dim, affine=False)) # output layer
+        # self.encoder.fc[6].bias.requires_grad = False # hack: not use bias as it is followed by BN
 
         # build a 2-layer predictor
         self.predictor = nn.Sequential(nn.Linear(dim, pred_dim, bias=False),
@@ -109,13 +111,13 @@ def main():
     wandb.init(
         # set the wandb project where this run will be logged
         project="self-supervised",
-        name='simsiam',
+        name='test',
         # tags=["pretrained"],
 
         # track hyperparameters and run metadata
         config={
         "architecture": 'vit_tiny_patch16_224',
-        "dataset": "flowers",
+        "dataset": "STL10",
         "epochs": 100,
         })
 
@@ -124,7 +126,14 @@ def main():
 
     base_model = timm.create_model('vit_tiny_patch16_224', pretrained=False, num_classes=2048)
     model = SimSiam(base_model).to(device)
-    
+
+    # criterion = nn.CosineSimilarity(dim=1).to(device)
+    criterion = nn.CosineSimilarity(dim=1).to(device) #cross entropyで書いた方がいいかも
+
+    # optimizer = torch.optim.SGD(model.parameters())
+    init_lr = 0.05 * 64 / 256
+    optimizer = torch.optim.SGD(model.parameters(), init_lr)
+
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                      std=[0.229, 0.224, 0.225])
 
@@ -159,25 +168,49 @@ def main():
     print(f"Data loaded: there are {len(train_dataset)} train images.")
     # print(f"Data loaded: there are {len(val_dataset)} val images.")
 
-    train_loss_list = [] 
-    train_accuracy_list = [] 
+    # train_loss_list = [] 
+    # train_accuracy_list = []
+    # loss_list = [] 
     # val_loss_list = [] 
     # val_accuracy_list = [] 
 
     print("Starting training !")
     for epoch in range(0,100):
-        loss = train()
+        loss = train(train_loader,model,device,criterion,optimizer)
         print("--------------------------------------------------------------------------------------------")
         print(f"{epoch}epoch")
         print(f"Loss: {loss}")
 
         wandb.log({"Loss": loss,
                    "epoch": epoch})
-        
+    wandb.alert(
+        title='学習が完了しました。',
+        text=f'final_loss :{loss}',
+    )
 
-def train():
-    a
+    wandb.finish()
 
+def train(train_loader,model,device,criterion,optimizer):
+    model.train()
+
+    train_losses = 0
+
+    for images, _ in train_loader:
+        im_1 = images[0].to(device)
+        im_2 = images[1].to(device) 
+
+        p1, p2, z1, z2 = model(x1=im_1, x2=im_2)
+        loss = -(criterion(p1, z2).mean() + criterion(p2, z1).mean()) * 0.5
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+        train_losses += loss#.items()
+    
+    epoch_train_loss = train_losses /len(train_loader)
+
+    return epoch_train_loss
 
 if __name__ == '__main__':
     main()
