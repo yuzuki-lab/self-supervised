@@ -1,0 +1,236 @@
+{
+    "os": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-11-29T13:40:59.119003",
+    "startedAt": "2023-11-29T13:40:57.389494",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/yishido/self_supervied/notgrad_vit.py",
+    "codePathLocal": "notgrad_vit.py",
+    "codePath": "notgrad_vit.py",
+    "git": {
+        "remote": "git@github.com:yuzuki-lab/self-supervised.git",
+        "commit": "1766d5ab4c67aed2e4979134673929db0fab6374"
+    },
+    "email": "117724724+yuzuki-lab@users.noreply.github.com",
+    "root": "/home/yishido/self_supervied",
+    "host": "mach01",
+    "username": "yishido",
+    "executable": "/home/yishido/.pyenv/versions/3.10.12/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3287.5694375,
+        "min": 1500.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3291.91,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3292.06,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3298.447,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3295.346,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3296.596,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3296.334,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3296.334,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.343,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.404,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3294.749,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3294.7,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3300.023,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3299.932,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3298.62,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3298.756,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3299.877,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3299.888,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3294.055,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3295.285,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3295.19,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3295.085,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3299.845,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3300.095,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3298.488,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3298.531,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.198,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.283,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3291.898,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3291.548,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.194,
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3297.062,
+            "min": 1500.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1876.7089385986328,
+            "used": 72.88586807250977
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 251.74816131591797
+    }
+}

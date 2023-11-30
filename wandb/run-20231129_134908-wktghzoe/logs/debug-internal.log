@@ -1,0 +1,206 @@
+2023-11-29 13:49:08,219 INFO    StreamThr :1518674 [internal.py:wandb_internal():86] W&B internal server running at pid: 1518674, started at: 2023-11-29 13:49:08.210887
+2023-11-29 13:49:08,258 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status
+2023-11-29 13:49:08,273 INFO    WriterThread:1518674 [datastore.py:open_for_write():85] open: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/run-wktghzoe.wandb
+2023-11-29 13:49:08,276 DEBUG   SenderThread:1518674 [sender.py:send():380] send: header
+2023-11-29 13:49:08,276 DEBUG   SenderThread:1518674 [sender.py:send():380] send: run
+2023-11-29 13:49:09,389 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: check_version
+2023-11-29 13:49:09,406 INFO    SenderThread:1518674 [dir_watcher.py:__init__():211] watching files in: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files
+2023-11-29 13:49:09,407 INFO    SenderThread:1518674 [sender.py:_start_run_threads():1122] run started: wktghzoe with start time 1701265748.207092
+2023-11-29 13:49:09,407 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: check_version
+2023-11-29 13:49:09,941 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: run_start
+2023-11-29 13:49:09,981 DEBUG   HandlerThread:1518674 [system_info.py:__init__():32] System info init
+2023-11-29 13:49:09,981 DEBUG   HandlerThread:1518674 [system_info.py:__init__():47] System info init done
+2023-11-29 13:49:09,981 INFO    HandlerThread:1518674 [system_monitor.py:start():181] Starting system monitor
+2023-11-29 13:49:10,002 INFO    SystemMonitor:1518674 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-11-29 13:49:10,003 INFO    HandlerThread:1518674 [system_monitor.py:probe():201] Collecting system info
+2023-11-29 13:49:10,027 INFO    SystemMonitor:1518674 [interfaces.py:start():190] Started cpu monitoring
+2023-11-29 13:49:10,038 INFO    SystemMonitor:1518674 [interfaces.py:start():190] Started disk monitoring
+2023-11-29 13:49:10,052 INFO    SystemMonitor:1518674 [interfaces.py:start():190] Started gpu monitoring
+2023-11-29 13:49:10,074 INFO    SystemMonitor:1518674 [interfaces.py:start():190] Started memory monitoring
+2023-11-29 13:49:10,081 INFO    SystemMonitor:1518674 [interfaces.py:start():190] Started network monitoring
+2023-11-29 13:49:10,127 DEBUG   HandlerThread:1518674 [system_info.py:probe():196] Probing system
+2023-11-29 13:49:10,132 DEBUG   HandlerThread:1518674 [system_info.py:_probe_git():181] Probing git
+2023-11-29 13:49:10,149 DEBUG   HandlerThread:1518674 [system_info.py:_probe_git():189] Probing git done
+2023-11-29 13:49:10,149 DEBUG   HandlerThread:1518674 [system_info.py:probe():244] Probing system done
+2023-11-29 13:49:10,149 DEBUG   HandlerThread:1518674 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-78-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-11-29T13:49:10.128334', 'startedAt': '2023-11-29T13:49:08.171177', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yishido/self_supervied/notpredictor_vit.py', 'codePathLocal': 'notpredictor_vit.py', 'codePath': 'notpredictor_vit.py', 'git': {'remote': 'git@github.com:yuzuki-lab/self-supervised.git', 'commit': '1766d5ab4c67aed2e4979134673929db0fab6374'}, 'email': '117724724+yuzuki-lab@users.noreply.github.com', 'root': '/home/yishido/self_supervied', 'host': 'mach01', 'username': 'yishido', 'executable': '/home/yishido/.pyenv/versions/3.10.12/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3288.13990625, 'min': 1500.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3298.219, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.686, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.675, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.57, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.945, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.849, 'min': 1500.0, 'max': 3000.0}, {'current': 3300.017, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.829, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.796, 'min': 1500.0, 'max': 3000.0}, {'current': 3295.296, 'min': 1500.0, 'max': 3000.0}, {'current': 3295.023, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.092, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.167, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.292, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.293, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.374, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.203, 'min': 1500.0, 'max': 3000.0}, {'current': 3298.137, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.971, 'min': 1500.0, 'max': 3000.0}, {'current': 3295.124, 'min': 1500.0, 'max': 3000.0}, {'current': 3295.211, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.899, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.913, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.862, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.853, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.558, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.541, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.874, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.937, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.223, 'min': 1500.0, 'max': 3000.0}, {'current': 3296.265, 'min': 1500.0, 'max': 3000.0}], 'disk': {'/': {'total': 1876.7089385986328, 'used': 72.88597869873047}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.74816131591797}}
+2023-11-29 13:49:10,150 INFO    HandlerThread:1518674 [system_monitor.py:probe():211] Finished collecting system info
+2023-11-29 13:49:10,150 INFO    HandlerThread:1518674 [system_monitor.py:probe():214] Publishing system info
+2023-11-29 13:49:10,150 DEBUG   HandlerThread:1518674 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-29 13:49:10,151 DEBUG   HandlerThread:1518674 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-29 13:49:10,154 INFO    HandlerThread:1518674 [system_monitor.py:probe():216] Finished publishing system info
+2023-11-29 13:49:10,167 DEBUG   SenderThread:1518674 [sender.py:send():380] send: files
+2023-11-29 13:49:10,168 INFO    SenderThread:1518674 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-29 13:49:10,195 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-29 13:49:10,198 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 13:49:10,227 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-29 13:49:10,397 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-metadata.json
+2023-11-29 13:49:10,398 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/requirements.txt
+2023-11-29 13:49:10,654 DEBUG   SenderThread:1518674 [sender.py:send():380] send: telemetry
+2023-11-29 13:49:11,190 INFO    wandb-upload_0:1518674 [upload_job.py:push():131] Uploaded file /tmp/tmp80xc81c8wandb/mso5omqy-wandb-metadata.json
+2023-11-29 13:49:13,656 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:18,657 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:23,658 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:25,196 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-29 13:49:25,197 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 13:49:25,204 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-29 13:49:29,500 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:30,425 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:49:32,428 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:49:34,697 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:39,703 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:40,196 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-29 13:49:40,197 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 13:49:40,204 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-29 13:49:40,441 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/config.yaml
+2023-11-29 13:49:42,445 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:49:45,468 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:50,455 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:49:50,482 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:49:55,197 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-29 13:49:55,198 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 13:49:55,204 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-29 13:49:56,469 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:50:01,470 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:50:01,590 DEBUG   SenderThread:1518674 [sender.py:send():380] send: exit
+2023-11-29 13:50:01,591 INFO    SenderThread:1518674 [sender.py:send_exit():585] handling exit code: 1
+2023-11-29 13:50:01,591 INFO    SenderThread:1518674 [sender.py:send_exit():587] handling runtime: 51
+2023-11-29 13:50:01,595 INFO    SenderThread:1518674 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-29 13:50:01,596 INFO    SenderThread:1518674 [sender.py:send_exit():593] send defer
+2023-11-29 13:50:01,596 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:01,596 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 0
+2023-11-29 13:50:01,597 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:01,597 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-29 13:50:01,597 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 1
+2023-11-29 13:50:01,597 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:01,598 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 1
+2023-11-29 13:50:01,598 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:01,599 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-29 13:50:01,599 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 2
+2023-11-29 13:50:01,599 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:01,599 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 2
+2023-11-29 13:50:01,599 INFO    HandlerThread:1518674 [system_monitor.py:finish():190] Stopping system monitor
+2023-11-29 13:50:01,599 DEBUG   SystemMonitor:1518674 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-11-29 13:50:01,601 INFO    HandlerThread:1518674 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-29 13:50:01,602 INFO    HandlerThread:1518674 [interfaces.py:finish():202] Joined disk monitor
+2023-11-29 13:50:01,601 DEBUG   SystemMonitor:1518674 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-11-29 13:50:01,602 DEBUG   SystemMonitor:1518674 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-11-29 13:50:02,477 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-summary.json
+2023-11-29 13:50:03,695 INFO    HandlerThread:1518674 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-29 13:50:03,696 INFO    HandlerThread:1518674 [interfaces.py:finish():202] Joined memory monitor
+2023-11-29 13:50:03,697 INFO    HandlerThread:1518674 [interfaces.py:finish():202] Joined network monitor
+2023-11-29 13:50:03,698 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-29 13:50:03,699 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,700 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-29 13:50:03,700 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 3
+2023-11-29 13:50:03,700 DEBUG   SenderThread:1518674 [sender.py:send():380] send: stats
+2023-11-29 13:50:03,700 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:03,702 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 3
+2023-11-29 13:50:03,702 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: poll_exit
+2023-11-29 13:50:03,704 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,704 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-29 13:50:03,704 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 4
+2023-11-29 13:50:03,705 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:03,705 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 4
+2023-11-29 13:50:03,705 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,705 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-29 13:50:03,706 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 5
+2023-11-29 13:50:03,706 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:03,706 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 5
+2023-11-29 13:50:03,706 DEBUG   SenderThread:1518674 [sender.py:send():380] send: summary
+2023-11-29 13:50:03,708 INFO    SenderThread:1518674 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-29 13:50:03,709 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,709 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-29 13:50:03,709 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 6
+2023-11-29 13:50:03,710 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:03,710 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 6
+2023-11-29 13:50:03,710 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,711 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-29 13:50:03,711 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 7
+2023-11-29 13:50:03,711 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:50:03,711 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:03,712 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 7
+2023-11-29 13:50:03,712 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:03,712 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-29 13:50:04,480 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:50:04,481 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-summary.json
+2023-11-29 13:50:05,608 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 8
+2023-11-29 13:50:05,609 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:05,610 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 8
+2023-11-29 13:50:05,610 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:05,611 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-29 13:50:05,611 INFO    SenderThread:1518674 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-29 13:50:05,613 INFO    SenderThread:1518674 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-11-29 13:50:05,620 INFO    SenderThread:1518674 [job_builder.py:build():369] adding wandb-job metadata file
+2023-11-29 13:50:05,641 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 9
+2023-11-29 13:50:05,642 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:05,643 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 9
+2023-11-29 13:50:05,643 DEBUG   SenderThread:1518674 [sender.py:send():380] send: artifact
+2023-11-29 13:50:06,482 INFO    Thread-12 :1518674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:50:07,593 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: keepalive
+2023-11-29 13:50:08,240 INFO    wandb-upload_0:1518674 [upload_job.py:push():89] Uploaded file /home/yishido/.local/share/wandb/artifacts/staging/tmpolrc7e1z
+2023-11-29 13:50:08,690 INFO    wandb-upload_1:1518674 [upload_job.py:push():89] Uploaded file /home/yishido/.local/share/wandb/artifacts/staging/tmph4ivhg30
+2023-11-29 13:50:10,618 INFO    SenderThread:1518674 [sender.py:send_artifact():1456] sent artifact job-git_github.com_yuzuki-lab_self-supervised.git_notpredictor_vit.py - {'id': 'QXJ0aWZhY3Q6NjUyNjk3NzEw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExOTY2MTczNg==', 'latestArtifact': None}}
+2023-11-29 13:50:10,618 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:10,619 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: status_report
+2023-11-29 13:50:10,619 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-29 13:50:10,620 INFO    SenderThread:1518674 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-29 13:50:11,486 INFO    SenderThread:1518674 [dir_watcher.py:finish():388] scan: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files
+2023-11-29 13:50:11,486 INFO    SenderThread:1518674 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/config.yaml config.yaml
+2023-11-29 13:50:11,487 INFO    SenderThread:1518674 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/requirements.txt requirements.txt
+2023-11-29 13:50:11,487 INFO    SenderThread:1518674 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-metadata.json wandb-metadata.json
+2023-11-29 13:50:11,488 INFO    SenderThread:1518674 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log output.log
+2023-11-29 13:50:11,498 INFO    SenderThread:1518674 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-summary.json wandb-summary.json
+2023-11-29 13:50:11,498 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 10
+2023-11-29 13:50:11,499 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:11,500 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 10
+2023-11-29 13:50:11,501 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:11,502 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-29 13:50:11,502 INFO    SenderThread:1518674 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-29 13:50:11,974 INFO    wandb-upload_0:1518674 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/config.yaml
+2023-11-29 13:50:12,372 INFO    wandb-upload_3:1518674 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/wandb-summary.json
+2023-11-29 13:50:12,378 INFO    wandb-upload_1:1518674 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/requirements.txt
+2023-11-29 13:50:12,595 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: keepalive
+2023-11-29 13:50:12,736 INFO    wandb-upload_2:1518674 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/files/output.log
+2023-11-29 13:50:12,937 INFO    Thread-11 (_thread_body):1518674 [sender.py:transition_state():613] send defer: 11
+2023-11-29 13:50:12,937 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:12,939 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 11
+2023-11-29 13:50:12,939 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:12,939 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-29 13:50:12,940 INFO    SenderThread:1518674 [file_pusher.py:join():181] waiting for file pusher
+2023-11-29 13:50:12,940 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 12
+2023-11-29 13:50:12,940 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:12,940 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 12
+2023-11-29 13:50:12,940 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:12,940 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-29 13:50:12,941 INFO    SenderThread:1518674 [file_stream.py:finish():595] file stream finish called
+2023-11-29 13:50:13,255 INFO    SenderThread:1518674 [file_stream.py:finish():599] file stream finish is done
+2023-11-29 13:50:13,255 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 13
+2023-11-29 13:50:13,256 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:13,257 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 13
+2023-11-29 13:50:13,257 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:13,257 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-29 13:50:13,257 INFO    SenderThread:1518674 [sender.py:transition_state():613] send defer: 14
+2023-11-29 13:50:13,258 DEBUG   SenderThread:1518674 [sender.py:send():380] send: final
+2023-11-29 13:50:13,259 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: defer
+2023-11-29 13:50:13,259 DEBUG   SenderThread:1518674 [sender.py:send():380] send: footer
+2023-11-29 13:50:13,259 INFO    HandlerThread:1518674 [handler.py:handle_request_defer():170] handle defer: 14
+2023-11-29 13:50:13,260 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: defer
+2023-11-29 13:50:13,260 INFO    SenderThread:1518674 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-29 13:50:13,261 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-29 13:50:13,262 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: poll_exit
+2023-11-29 13:50:13,262 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: server_info
+2023-11-29 13:50:13,263 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: get_summary
+2023-11-29 13:50:13,264 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: server_info
+2023-11-29 13:50:13,264 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: sampled_history
+2023-11-29 13:50:13,269 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: internal_messages
+2023-11-29 13:50:13,270 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: job_info
+2023-11-29 13:50:13,447 DEBUG   SenderThread:1518674 [sender.py:send_request():407] send_request: job_info
+2023-11-29 13:50:13,449 INFO    MainThread:1518674 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-11-29 13:50:13,450 INFO    MainThread:1518674 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-11-29 13:50:13,450 INFO    MainThread:1518674 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-11-29 13:50:13,451 DEBUG   HandlerThread:1518674 [handler.py:handle_request():144] handle_request: shutdown
+2023-11-29 13:50:13,451 INFO    HandlerThread:1518674 [handler.py:finish():844] shutting down handler
+2023-11-29 13:50:14,271 INFO    WriterThread:1518674 [datastore.py:close():294] close: /home/yishido/self_supervied/wandb/run-20231129_134908-wktghzoe/run-wktghzoe.wandb
+2023-11-29 13:50:14,449 INFO    SenderThread:1518674 [sender.py:finish():1534] shutting down sender
+2023-11-29 13:50:14,449 INFO    SenderThread:1518674 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-29 13:50:14,449 INFO    SenderThread:1518674 [file_pusher.py:join():181] waiting for file pusher
