@@ -1,0 +1,27 @@
+2023-12-05 07:42:37,612 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2023-12-05 07:42:37,612 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Configure stats pid to 33449
+2023-12-05 07:42:37,612 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Loading settings from /home/yishido/.config/wandb/settings
+2023-12-05 07:42:37,613 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Loading settings from /home/yishido/self_supervied/wandb/settings
+2023-12-05 07:42:37,613 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-05 07:42:37,613 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-05 07:42:37,613 INFO    MainThread:33449 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'notpredictor_vit.py', 'program_abspath': '/home/yishido/self_supervied/notpredictor_vit.py', 'program': '/home/yishido/self_supervied/notpredictor_vit.py'}
+2023-12-05 07:42:37,614 INFO    MainThread:33449 [wandb_init.py:_log_setup():528] Logging user logs to /home/yishido/self_supervied/wandb/run-20231205_074237-7835956g/logs/debug.log
+2023-12-05 07:42:37,614 INFO    MainThread:33449 [wandb_init.py:_log_setup():529] Logging internal logs to /home/yishido/self_supervied/wandb/run-20231205_074237-7835956g/logs/debug-internal.log
+2023-12-05 07:42:37,615 INFO    MainThread:33449 [wandb_init.py:init():568] calling init triggers
+2023-12-05 07:42:37,615 INFO    MainThread:33449 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'architecture': 'vit_tiny_patch16_224', 'dataset': 'STL10', 'epochs': 100}
+2023-12-05 07:42:37,615 INFO    MainThread:33449 [wandb_init.py:init():618] starting backend
+2023-12-05 07:42:37,615 INFO    MainThread:33449 [wandb_init.py:init():622] setting up manager
+2023-12-05 07:42:37,622 INFO    MainThread:33449 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-05 07:42:37,627 INFO    MainThread:33449 [wandb_init.py:init():628] backend started and connected
+2023-12-05 07:42:37,634 INFO    MainThread:33449 [wandb_init.py:init():720] updated telemetry
+2023-12-05 07:42:37,654 INFO    MainThread:33449 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-12-05 07:42:38,516 INFO    MainThread:33449 [wandb_run.py:_on_init():2220] communicating current version
+2023-12-05 07:42:38,773 INFO    MainThread:33449 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-12-05 07:42:38,774 INFO    MainThread:33449 [wandb_init.py:init():804] starting run threads in backend
+2023-12-05 07:42:39,027 INFO    MainThread:33449 [wandb_run.py:_console_start():2199] atexit reg
+2023-12-05 07:42:39,028 INFO    MainThread:33449 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-12-05 07:42:39,028 INFO    MainThread:33449 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-12-05 07:42:39,029 INFO    MainThread:33449 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-12-05 07:42:39,032 INFO    MainThread:33449 [wandb_init.py:init():845] run started, returning control to user process

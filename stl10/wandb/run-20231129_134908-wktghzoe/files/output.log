@@ -1,0 +1,28 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Data loaded: there are 5000 train images.
+Starting training !
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/notpredictor_vit.py", line 312, in <module>
+    main()
+  File "/home/yishido/self_supervied/notpredictor_vit.py", line 214, in main
+    loss = train(Train_loader,model,device,criterion,optimizer)
+  File "/home/yishido/self_supervied/notpredictor_vit.py", line 240, in train
+    p1, p2, z1, z2 = model(x1=im_1, x2=im_2)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yishido/self_supervied/notpredictor_vit.py", line 89, in forward
+    p1 = self.encoder(z1) # NxC
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 652, in forward
+    x = self.forward_features(x)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 633, in forward_features
+    x = self.patch_embed(x)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/timm/layers/patch_embed.py", line 69, in forward
+    B, C, H, W = x.shape
+ValueError: not enough values to unpack (expected 4, got 2)

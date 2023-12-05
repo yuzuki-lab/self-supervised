@@ -1,0 +1,21 @@
+Data loaded: there are 50000 train images.
+Starting training !
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/cifar_resnet.py", line 311, in <module>
+    main()
+  File "/home/yishido/self_supervied/cifar_resnet.py", line 214, in main
+    acc = val(acc_train_loader,acc_val_loader,model,device)
+  File "/home/yishido/self_supervied/cifar_resnet.py", line 259, in val
+    pred_labels = knn.predict(test_X)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/sklearn/neighbors/_classification.py", line 254, in predict
+    probabilities = self.predict_proba(X)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/sklearn/neighbors/_classification.py", line 355, in predict_proba
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/sklearn/neighbors/_base.py", line 822, in kneighbors
+    results = ArgKmin.compute(
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py", line 271, in compute
+    return ArgKmin32.compute(
+  File "sklearn/metrics/_pairwise_distances_reduction/_argkmin.pyx", line 575, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin32.compute
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/threadpoolctl.py", line 440, in __exit__
+    def __exit__(self, type, value, traceback):
+KeyboardInterrupt

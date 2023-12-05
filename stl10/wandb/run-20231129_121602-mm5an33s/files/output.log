@@ -1,0 +1,16 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Data loaded: there are 5000 train images.
+Starting training !
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/loss_acc.py", line 312, in <module>
+    main()
+  File "/home/yishido/self_supervied/loss_acc.py", line 215, in main
+    acc = val(acc_train_loader,acc_val_loader,model,device)
+  File "/home/yishido/self_supervied/loss_acc.py", line 255, in val
+    model = model.encorder
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'SimSiam' object has no attribute 'encorder'

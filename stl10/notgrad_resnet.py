@@ -8,6 +8,7 @@ import os
 import numpy as np
 import warnings
 import wandb
+import timm
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
@@ -87,7 +88,7 @@ class SimSiam(nn.Module):
         p1 = self.predictor(z1) # NxC
         p2 = self.predictor(z2) # NxC
 
-        return p1, p2, z1.detach(), z2.detach()
+        return p1, p2, z1, z2
     
 def torch_fix_seed(seed):
     # seed = config['seed']
@@ -112,7 +113,7 @@ def main():
     wandb.init(
         # set the wandb project where this run will be logged
         project="SimSiam",
-        name='test',
+        name='notgrad_r',
         # tags=["pretrained"],
 
         # track hyperparameters and run metadata
@@ -122,7 +123,7 @@ def main():
         "epochs": 100,
         })
 
-    device = 'cuda:2'
+    device = 'cuda:4'
     torch_fix_seed(32)
 
     # base_model = timm.create_model('vit_tiny_patch16_224', pretrained=False, num_classes=2048)
@@ -208,17 +209,16 @@ def main():
     # val_accuracy_list = [] 
 
     print("Starting training !")
-    for epoch in range(0,20):
+    for epoch in range(0,100):
         loss = train(Train_loader,model,device,criterion,optimizer)
-        knn_acc, linear_acc = val(acc_train_loader,acc_val_loader,model,device)
+        # acc = val(acc_train_loader,acc_val_loader,model,device)
         print("--------------------------------------------------------------------------------------------")
         print(f"{epoch}epoch")
         print(f"Loss: {loss}")
         # print(f"k-NN acc: {acc}")
 
         wandb.log({"Loss": loss,
-                   "k-NN acc": knn_acc,
-                   "linear acc": linear_acc,
+                #    "Accuracy": acc,
                    "epoch": epoch})
     wandb.alert(
         title='学習が完了しました。',
@@ -252,52 +252,15 @@ def train(Train_loader,model,device,criterion,optimizer):
 def val(acc_train_loader,acc_val_loader,model,device):
     model.eval()
     model = model.encoder
-
-    num_features = 2048
-    n_classes = 10
-
-    logreg = nn.Sequential(nn.Linear(num_features, n_classes))
-    logreg = logreg.to(device)
-
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(params=logreg.parameters(), lr=3e-3)
-
     (train_X, train_y, test_X, test_y) = get_features(model, acc_train_loader, acc_val_loader, 'cuda')
 
-    train_loader, test_loader = create_data_loaders_from_arrays(
-        train_X, train_y, test_X, test_y, 2048)
-
-    #-------------train-------------
-    #linear
-    for epoch in range(100):
-        for step, (h, y) in enumerate(train_loader):
-            h = h.to(device)
-            y = y.to(device)
-
-            outputs = logreg(h)
-
-            loss = criterion(outputs, y)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            #accuracyの計算はぶく
-    #knn        
     knn = KNeighborsClassifier(n_neighbors=15)
     knn.fit(train_X, train_y)
+    pred_labels = knn.predict(test_X)
 
-    #-------------test-------------
-    #linear
-    for step, (h, y) in enumerate(test_loader):
-        h = h.to(device)
-        y = y.to(device)
+    knn_acc = sum(pred_labels == test_y)/len(test_y)
 
-        outputs = logreg(h)
-
-        linear_acc = (outputs.argmax(1) == y).sum().item() / y.size(0)
-    #knn
-    knn_acc = accuracy_score(test_y, knn.predict(test_X))#####################ちょっと怪しい
-
-    return knn_acc, linear_acc
+    return knn_acc
     
 def inference(loader, model, device):
     feature_vector = []

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/test.py", line 212, in <module>
+    main()
+  File "/home/yishido/self_supervied/test.py", line 126, in main
+    model = SimSiam(base_model).to(device)
+  File "/home/yishido/self_supervied/test.py", line 50, in __init__
+    self.encoder = base_encoder(num_classes=dim, zero_init_residual=True)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: VisionTransformer.forward() got an unexpected keyword argument 'num_classes'

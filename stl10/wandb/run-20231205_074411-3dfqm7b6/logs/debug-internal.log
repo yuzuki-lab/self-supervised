@@ -1,0 +1,966 @@
+2023-12-05 07:44:11,382 INFO    StreamThr :34656 [internal.py:wandb_internal():86] W&B internal server running at pid: 34656, started at: 2023-12-05 07:44:11.380946
+2023-12-05 07:44:11,386 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status
+2023-12-05 07:44:11,391 INFO    WriterThread:34656 [datastore.py:open_for_write():85] open: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/run-3dfqm7b6.wandb
+2023-12-05 07:44:11,393 DEBUG   SenderThread:34656 [sender.py:send():380] send: header
+2023-12-05 07:44:11,407 DEBUG   SenderThread:34656 [sender.py:send():380] send: run
+2023-12-05 07:44:12,050 INFO    SenderThread:34656 [dir_watcher.py:__init__():211] watching files in: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files
+2023-12-05 07:44:12,051 INFO    SenderThread:34656 [sender.py:_start_run_threads():1122] run started: 3dfqm7b6 with start time 1701762251.381313
+2023-12-05 07:44:12,103 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: check_version
+2023-12-05 07:44:12,104 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: check_version
+2023-12-05 07:44:12,378 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: run_start
+2023-12-05 07:44:12,401 DEBUG   HandlerThread:34656 [system_info.py:__init__():32] System info init
+2023-12-05 07:44:12,402 DEBUG   HandlerThread:34656 [system_info.py:__init__():47] System info init done
+2023-12-05 07:44:12,402 INFO    HandlerThread:34656 [system_monitor.py:start():181] Starting system monitor
+2023-12-05 07:44:12,402 INFO    SystemMonitor:34656 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-12-05 07:44:12,402 INFO    HandlerThread:34656 [system_monitor.py:probe():201] Collecting system info
+2023-12-05 07:44:12,404 INFO    SystemMonitor:34656 [interfaces.py:start():190] Started cpu monitoring
+2023-12-05 07:44:12,406 INFO    SystemMonitor:34656 [interfaces.py:start():190] Started disk monitoring
+2023-12-05 07:44:12,407 INFO    SystemMonitor:34656 [interfaces.py:start():190] Started gpu monitoring
+2023-12-05 07:44:12,412 INFO    SystemMonitor:34656 [interfaces.py:start():190] Started memory monitoring
+2023-12-05 07:44:12,414 INFO    SystemMonitor:34656 [interfaces.py:start():190] Started network monitoring
+2023-12-05 07:44:12,495 DEBUG   HandlerThread:34656 [system_info.py:probe():196] Probing system
+2023-12-05 07:44:12,501 DEBUG   HandlerThread:34656 [system_info.py:_probe_git():181] Probing git
+2023-12-05 07:44:12,523 DEBUG   HandlerThread:34656 [system_info.py:_probe_git():189] Probing git done
+2023-12-05 07:44:12,523 DEBUG   HandlerThread:34656 [system_info.py:probe():244] Probing system done
+2023-12-05 07:44:12,523 DEBUG   HandlerThread:34656 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-78-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-12-05T07:44:12.495847', 'startedAt': '2023-12-05T07:44:11.355172', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yishido/self_supervied/notpredictor_vit.py', 'codePathLocal': 'notpredictor_vit.py', 'codePath': 'notpredictor_vit.py', 'git': {'remote': 'git@github.com:yuzuki-lab/self-supervised.git', 'commit': 'c441728209ccdd4671d6a297411fd3e05f4d9551'}, 'email': '117724724+yuzuki-lab@users.noreply.github.com', 'root': '/home/yishido/self_supervied', 'host': 'mach01', 'username': 'yishido', 'executable': '/home/yishido/.pyenv/versions/3.10.12/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1903.0333125, 'min': 1500.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3297.006, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3299.997, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2400.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2400.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 3000.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2400.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2400.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2395.069, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2400.0, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}, {'current': 2397.677, 'min': 1500.0, 'max': 3000.0}, {'current': 1497.998, 'min': 1500.0, 'max': 3000.0}, {'current': 1500.0, 'min': 1500.0, 'max': 3000.0}], 'disk': {'/': {'total': 1876.7089385986328, 'used': 73.20027542114258}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.74816131591797}}
+2023-12-05 07:44:12,524 INFO    HandlerThread:34656 [system_monitor.py:probe():211] Finished collecting system info
+2023-12-05 07:44:12,524 INFO    HandlerThread:34656 [system_monitor.py:probe():214] Publishing system info
+2023-12-05 07:44:12,524 DEBUG   HandlerThread:34656 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-05 07:44:12,527 DEBUG   HandlerThread:34656 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-05 07:44:12,531 INFO    HandlerThread:34656 [system_monitor.py:probe():216] Finished publishing system info
+2023-12-05 07:44:12,551 DEBUG   SenderThread:34656 [sender.py:send():380] send: files
+2023-12-05 07:44:12,552 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-12-05 07:44:12,572 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:44:12,573 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:44:12,580 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:44:13,002 DEBUG   SenderThread:34656 [sender.py:send():380] send: telemetry
+2023-12-05 07:44:13,055 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/requirements.txt
+2023-12-05 07:44:13,055 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-metadata.json
+2023-12-05 07:44:13,417 INFO    wandb-upload_0:34656 [upload_job.py:push():131] Uploaded file /tmp/tmpidzf0lr5wandb/kk27sz5r-wandb-metadata.json
+2023-12-05 07:44:17,004 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:22,005 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:24,065 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:44:26,068 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:44:27,282 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:27,573 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:44:27,575 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:44:27,575 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:44:32,075 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:44:32,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:37,615 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:40,084 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:44:42,573 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:44:42,574 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:44:42,582 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:44:42,822 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:44,089 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/config.yaml
+2023-12-05 07:44:49,042 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:54,043 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:44:57,573 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:44:57,573 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:44:57,617 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:44:59,850 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:01,523 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:45:01,527 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:45:01,528 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:45:01,536 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:45:02,119 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:45:02,120 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:45:05,539 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:10,541 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:12,415 DEBUG   SystemMonitor:34656 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-12-05 07:45:12,421 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:45:12,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:45:12,579 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:45:12,581 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:45:15,849 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:20,851 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:24,141 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:45:24,146 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:45:24,147 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:45:24,150 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:45:24,151 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:45:26,154 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:45:26,155 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:27,575 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:45:27,575 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:45:27,577 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:45:31,771 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:36,774 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:41,775 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:42,430 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:45:42,575 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:45:42,576 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:45:42,616 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:45:46,518 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:45:46,522 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:45:46,523 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:45:46,528 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:45:47,181 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:45:47,531 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:48,181 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:45:52,532 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:57,534 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:45:57,577 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:45:57,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:45:57,584 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:46:02,843 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:07,844 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:09,425 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:46:09,430 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:46:09,430 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:46:09,433 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:46:10,208 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:46:10,209 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:46:12,211 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:46:12,438 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:46:12,580 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:46:12,581 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:46:12,582 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:46:13,799 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:18,802 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:23,802 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:27,576 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:46:27,578 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:46:27,617 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:46:28,852 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:32,149 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:46:32,154 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:46:32,155 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:46:32,158 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:46:32,238 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:46:34,161 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:34,241 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:46:39,164 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:42,447 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:46:42,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:46:42,580 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:46:42,604 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:46:44,847 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:49,849 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:54,852 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:46:55,345 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:46:55,350 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:46:55,351 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:46:55,354 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:46:56,271 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:46:56,272 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:46:57,577 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:46:57,578 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:46:57,582 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:46:59,852 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:04,853 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:09,855 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:12,455 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:47:12,577 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:47:12,578 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:47:12,584 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:47:15,846 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:17,787 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:47:17,792 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:47:17,793 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:47:17,798 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:47:18,300 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:47:20,302 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:47:21,801 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:26,802 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:27,577 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:47:27,578 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:47:27,585 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:47:31,823 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:36,824 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:40,471 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:47:40,477 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:47:40,478 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:47:40,483 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:47:41,331 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:47:42,332 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:47:42,463 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:47:42,467 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:42,577 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:47:42,578 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:47:42,584 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:47:47,801 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:52,803 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:47:57,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:47:57,579 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:47:57,587 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:47:57,861 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:02,862 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:02,885 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:48:02,889 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:48:02,889 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:48:02,893 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:48:03,361 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:48:04,362 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:48:07,896 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:12,474 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:48:12,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:48:12,579 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:48:12,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:48:13,780 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:18,781 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:23,783 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:25,254 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:48:25,258 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:48:25,259 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:48:25,262 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:48:25,392 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:48:26,393 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:48:27,579 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:48:27,580 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:48:27,587 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:48:28,796 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:33,798 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:38,799 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:42,483 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:48:42,578 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:48:42,579 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:48:42,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:48:44,795 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:48,049 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:48:48,053 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:48:48,054 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:48:48,060 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:48:48,420 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:48:50,061 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:50,423 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:48:55,063 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:48:57,580 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:48:57,582 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:48:57,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:49:00,868 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:05,869 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:10,870 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:10,973 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:49:10,978 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:49:10,978 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:49:10,984 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:49:11,451 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:49:12,452 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:49:12,489 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:49:12,580 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:49:12,581 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:49:12,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:49:16,792 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:21,793 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:26,795 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:27,579 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:49:27,581 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:49:27,586 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:49:31,849 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:34,061 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:49:34,065 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:49:34,066 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:49:34,069 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:49:34,481 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:49:36,484 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:49:37,071 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:42,072 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:42,496 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:49:42,579 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:49:42,580 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:49:42,585 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:49:47,826 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:52,827 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:57,196 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:49:57,199 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:49:57,199 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:49:57,201 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:49:57,528 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:49:57,580 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:49:57,581 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:49:57,596 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:49:57,877 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:49:58,530 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:50:02,878 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:07,880 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:12,505 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:50:12,581 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:50:12,582 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:50:12,620 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:50:13,857 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:18,858 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:20,041 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:50:20,045 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:50:20,046 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:50:20,048 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:50:20,561 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:50:22,562 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:50:24,049 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:27,581 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:50:27,582 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:50:27,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:50:29,817 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:34,819 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:39,820 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:42,510 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:50:42,560 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:50:42,561 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:50:42,562 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:50:42,564 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:50:42,585 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:50:42,585 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:50:42,591 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:50:42,675 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:50:44,593 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:50:44,915 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:49,917 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:54,918 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:50:57,584 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:50:57,586 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:50:57,628 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:51:00,788 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:05,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:51:05,594 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:51:05,595 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:51:05,598 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:51:05,627 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:51:06,600 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:08,631 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:51:11,602 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:12,516 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:51:12,585 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:51:12,586 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:51:12,612 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:51:16,833 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:21,834 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:26,835 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:27,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:51:27,589 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:51:27,628 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:51:28,197 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:51:28,201 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:51:28,202 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:51:28,207 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:51:28,659 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:51:30,662 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:51:32,212 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:37,215 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:42,222 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:42,520 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:51:42,585 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:51:42,586 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:51:42,613 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:51:47,805 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:50,605 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:51:50,608 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:51:50,609 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:51:50,611 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:51:50,692 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:51:52,695 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:51:53,613 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:51:57,587 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:51:57,588 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:51:57,613 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:51:58,775 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:03,776 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:08,778 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:12,528 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:52:12,586 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:52:12,586 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:52:12,612 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:52:12,936 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:52:12,938 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:52:12,939 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:52:12,941 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:52:13,725 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:52:13,943 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:14,727 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:52:18,944 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:23,945 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:27,586 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:52:27,587 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:52:27,613 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:52:29,831 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:34,832 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:35,620 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:52:35,624 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:52:35,625 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:52:35,627 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:52:35,759 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:52:38,764 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:52:40,630 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:42,538 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:52:42,587 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:52:42,588 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:52:42,613 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:52:45,782 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:50,782 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:55,783 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:52:57,586 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:52:57,587 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:52:57,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:52:58,505 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:52:58,508 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:52:58,510 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:52:58,513 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:52:58,794 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:53:00,798 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:53:01,515 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:06,518 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:11,519 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:12,545 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:53:12,587 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:53:12,588 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:53:12,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:53:16,805 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:21,106 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:53:21,109 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:53:21,110 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:53:21,112 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:53:21,832 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:53:22,114 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:22,834 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:53:27,116 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:27,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:53:27,589 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:53:27,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:53:32,769 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:37,770 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:42,559 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:53:42,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:53:42,590 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:53:42,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:53:42,776 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:43,860 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:53:43,864 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:53:43,864 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:53:43,867 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:53:44,868 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:53:46,873 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:53:47,870 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:52,871 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:53:57,588 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:53:57,590 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:53:57,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:53:58,839 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:03,840 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:06,499 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:54:06,502 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:54:06,503 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:54:06,505 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:54:06,904 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:54:08,907 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:54:09,508 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:12,562 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:54:12,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:54:12,590 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:54:12,615 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:54:14,790 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:19,792 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:24,793 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:27,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:54:27,591 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:54:27,614 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:54:29,520 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:54:29,523 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:54:29,523 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:54:29,526 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:54:29,937 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:54:30,528 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:30,938 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:54:35,529 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:40,533 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:42,569 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:54:42,589 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:54:42,590 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:54:42,615 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:54:45,863 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:50,864 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:52,403 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:54:52,406 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:54:52,407 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:54:52,409 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:54:52,969 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:54:54,971 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:54:56,412 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:54:57,590 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:54:57,591 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:54:57,615 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:55:01,772 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:06,774 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:11,775 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:12,577 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:55:12,590 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:55:12,591 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:55:12,615 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:55:15,389 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:55:15,392 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:55:15,393 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:55:15,396 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:55:16,003 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:55:17,005 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:55:17,398 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:22,400 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:27,401 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:27,591 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:55:27,592 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:55:27,617 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:55:32,857 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:37,859 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:37,936 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:55:37,940 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:55:37,940 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:55:37,943 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:55:38,037 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:55:41,042 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:55:42,584 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:55:42,592 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:55:42,593 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:55:42,616 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:55:43,813 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:48,815 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:53,816 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:55:57,593 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:55:57,594 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:55:57,616 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:55:58,901 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:00,497 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:56:00,499 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:56:00,500 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:56:00,502 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:56:01,074 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:56:03,077 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:56:04,504 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:09,506 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:12,594 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:56:12,595 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:56:12,603 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:56:12,616 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:56:14,811 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:19,813 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:23,274 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:56:23,278 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:56:23,278 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:56:23,281 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:56:24,113 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:56:25,114 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:56:25,283 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:27,593 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:56:27,594 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:56:27,616 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:56:30,805 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:35,806 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:40,807 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:42,599 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:56:42,602 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:56:42,618 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:56:42,815 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:56:45,820 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:46,091 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:56:46,093 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:56:46,093 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:56:46,101 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:56:46,151 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:56:49,157 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:56:51,103 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:56,104 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:56:57,594 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:56:57,595 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:56:57,617 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:57:01,887 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:06,889 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:08,510 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:57:08,515 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:57:08,516 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:57:08,519 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:57:09,184 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:57:11,187 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:57:12,521 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:12,594 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:57:12,595 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:57:12,618 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:57:12,808 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:57:17,813 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:22,815 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:27,595 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:57:27,597 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:57:27,618 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:57:27,824 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:30,811 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:57:30,814 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:57:30,815 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:57:30,819 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:57:31,220 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:57:33,223 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:57:33,821 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:38,822 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:42,595 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:57:42,595 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:57:42,618 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:57:42,815 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:57:44,820 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:49,822 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:53,241 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:57:53,243 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:57:53,244 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:57:53,247 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:57:53,253 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:57:55,249 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:57:55,256 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:57:57,596 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:57:57,597 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:57:57,618 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:58:00,805 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:05,806 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:10,807 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:12,595 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:58:12,596 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:58:12,619 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:58:12,777 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:58:16,332 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:58:16,338 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:16,339 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:58:16,340 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:58:16,343 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:58:17,285 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:58:19,289 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:58:21,345 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:26,347 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:27,597 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:58:27,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:58:27,619 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:58:31,848 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:36,849 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:39,088 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:58:39,090 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:58:39,091 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:58:39,093 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:58:39,317 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:58:41,321 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:58:42,094 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:42,596 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:58:42,597 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:58:42,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:58:42,870 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:58:47,877 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:52,878 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:58:57,596 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:58:57,597 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:58:57,636 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:58:58,797 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:02,181 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:59:02,184 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:59:02,184 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:59:02,186 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:59:02,350 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:59:04,188 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:05,354 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:59:09,189 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:12,596 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:59:12,597 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:59:12,620 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:59:12,884 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:59:14,888 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:19,889 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:24,890 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:25,442 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:59:25,444 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:59:25,445 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:59:25,446 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:59:26,385 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:59:27,387 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:59:27,597 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:59:27,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:59:27,620 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:59:30,849 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:35,850 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:40,852 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:42,597 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:59:42,598 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:59:42,620 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 07:59:42,850 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 07:59:45,853 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:48,216 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 07:59:48,221 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 07:59:48,222 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 07:59:48,227 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 07:59:48,419 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 07:59:51,229 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:51,424 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 07:59:56,231 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 07:59:57,598 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 07:59:57,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 07:59:57,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:00:01,863 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:06,864 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:10,882 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:00:10,884 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:00:10,885 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:00:10,888 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:00:11,448 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:00:11,890 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:12,598 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:00:12,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:00:12,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:00:12,887 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:00:13,450 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:00:16,890 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:21,892 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:26,893 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:27,598 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:00:27,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:00:27,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:00:32,795 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:33,810 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:00:33,814 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:00:33,815 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:00:33,823 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:00:34,477 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:00:35,478 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:00:37,826 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:42,600 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:00:42,601 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:00:42,621 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:00:42,862 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:00:42,863 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:47,867 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:52,868 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:56,463 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:00:56,465 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:00:56,466 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:00:56,468 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:00:56,506 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:00:57,599 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:00:57,600 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:00:57,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:00:57,875 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:00:59,511 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:01:02,876 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:07,878 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:12,598 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:01:12,599 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:01:12,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:01:12,870 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:01:13,874 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:18,875 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:19,023 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:01:19,026 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:01:19,027 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:01:19,029 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:01:19,539 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:01:21,541 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:01:24,032 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:27,599 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:01:27,600 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:01:27,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:01:29,876 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:34,878 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:39,880 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:41,909 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:01:41,912 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:01:41,912 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:01:41,914 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:01:42,570 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:01:42,600 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:01:42,601 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:01:42,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:01:42,877 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:01:43,571 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:01:44,881 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:49,882 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:54,882 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:01:57,600 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:01:57,601 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:01:57,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:02:00,869 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:04,918 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:02:04,920 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:02:04,921 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:02:04,924 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:02:05,606 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:02:05,925 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:07,609 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:02:10,926 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:12,601 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:02:12,602 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:02:12,622 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:02:12,815 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:02:16,821 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:21,822 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:26,823 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:27,600 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:02:27,601 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:02:27,623 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:02:27,784 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:02:27,846 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:02:27,847 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:02:27,852 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:02:28,643 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:02:29,644 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:02:31,853 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:36,854 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:41,855 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:42,602 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:02:42,603 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:02:42,625 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:02:42,818 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:02:47,824 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:50,180 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:02:50,184 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:02:50,184 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:02:50,194 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:02:50,693 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:02:50,693 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:02:53,196 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:02:57,601 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:02:57,602 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:02:57,625 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:02:58,857 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:03,858 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:08,859 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:12,601 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-05 08:03:12,603 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: stop_status
+2023-12-05 08:03:12,625 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:03:12,676 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-05 08:03:12,859 DEBUG   SenderThread:34656 [sender.py:send():380] send: history
+2023-12-05 08:03:12,861 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: summary_record
+2023-12-05 08:03:12,874 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:03:12,875 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:03:13,762 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:03:13,880 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:14,764 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:03:16,415 DEBUG   SenderThread:34656 [sender.py:send():380] send: exit
+2023-12-05 08:03:16,415 INFO    SenderThread:34656 [sender.py:send_exit():585] handling exit code: 255
+2023-12-05 08:03:16,418 INFO    SenderThread:34656 [sender.py:send_exit():587] handling runtime: 1144
+2023-12-05 08:03:16,428 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:03:16,429 INFO    SenderThread:34656 [sender.py:send_exit():593] send defer
+2023-12-05 08:03:16,429 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:16,431 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 0
+2023-12-05 08:03:16,432 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:16,432 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-05 08:03:16,432 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 1
+2023-12-05 08:03:16,433 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:16,433 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 1
+2023-12-05 08:03:16,433 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:16,433 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-05 08:03:16,434 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 2
+2023-12-05 08:03:16,434 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:16,436 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 2
+2023-12-05 08:03:16,437 INFO    HandlerThread:34656 [system_monitor.py:finish():190] Stopping system monitor
+2023-12-05 08:03:16,438 INFO    HandlerThread:34656 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-05 08:03:16,438 INFO    HandlerThread:34656 [interfaces.py:finish():202] Joined disk monitor
+2023-12-05 08:03:16,440 DEBUG   SystemMonitor:34656 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-12-05 08:03:16,441 DEBUG   SystemMonitor:34656 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-12-05 08:03:16,772 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:03:17,464 INFO    HandlerThread:34656 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-05 08:03:17,465 INFO    HandlerThread:34656 [interfaces.py:finish():202] Joined memory monitor
+2023-12-05 08:03:17,467 INFO    HandlerThread:34656 [interfaces.py:finish():202] Joined network monitor
+2023-12-05 08:03:17,468 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-05 08:03:17,470 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,471 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-05 08:03:17,471 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 3
+2023-12-05 08:03:17,472 DEBUG   SenderThread:34656 [sender.py:send():380] send: stats
+2023-12-05 08:03:17,474 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: poll_exit
+2023-12-05 08:03:17,474 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:17,476 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 3
+2023-12-05 08:03:17,477 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,477 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-05 08:03:17,479 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 4
+2023-12-05 08:03:17,480 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:17,480 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 4
+2023-12-05 08:03:17,481 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,481 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-05 08:03:17,481 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 5
+2023-12-05 08:03:17,482 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:17,483 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 5
+2023-12-05 08:03:17,485 DEBUG   SenderThread:34656 [sender.py:send():380] send: summary
+2023-12-05 08:03:17,494 INFO    SenderThread:34656 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-05 08:03:17,495 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,497 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-05 08:03:17,497 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 6
+2023-12-05 08:03:17,497 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:17,498 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 6
+2023-12-05 08:03:17,498 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,499 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-05 08:03:17,499 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 7
+2023-12-05 08:03:17,499 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:17,502 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:17,502 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 7
+2023-12-05 08:03:17,502 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:17,502 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-05 08:03:17,776 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:03:18,418 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-05 08:03:18,778 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:03:20,424 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 8
+2023-12-05 08:03:20,424 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: poll_exit
+2023-12-05 08:03:20,425 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:20,426 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 8
+2023-12-05 08:03:20,426 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:20,427 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-05 08:03:20,427 INFO    SenderThread:34656 [job_builder.py:build():281] Attempting to build job artifact
+2023-12-05 08:03:20,429 INFO    SenderThread:34656 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-12-05 08:03:20,439 INFO    SenderThread:34656 [job_builder.py:build():369] adding wandb-job metadata file
+2023-12-05 08:03:20,467 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 9
+2023-12-05 08:03:20,467 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:20,468 DEBUG   SenderThread:34656 [sender.py:send():380] send: artifact
+2023-12-05 08:03:20,469 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 9
+2023-12-05 08:03:20,782 INFO    Thread-12 :34656 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:03:21,923 INFO    wandb-upload_1:34656 [upload_job.py:push():86] Skipped uploading /home/yishido/.local/share/wandb/artifacts/staging/tmprfhqkj4v
+2023-12-05 08:03:22,444 INFO    wandb-upload_0:34656 [upload_job.py:push():89] Uploaded file /home/yishido/.local/share/wandb/artifacts/staging/tmp23k46vh1
+2023-12-05 08:03:23,424 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-05 08:03:24,029 INFO    SenderThread:34656 [sender.py:send_artifact():1456] sent artifact job-git_github.com_yuzuki-lab_self-supervised.git_notpredictor_vit.py - {'id': 'QXJ0aWZhY3Q6NjU3NzA1ODcx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExOTY2MTczNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjUyNjk3NzEw', 'versionIndex': 0}}}
+2023-12-05 08:03:24,029 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:24,030 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-05 08:03:24,032 INFO    SenderThread:34656 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-05 08:03:24,787 INFO    SenderThread:34656 [dir_watcher.py:finish():388] scan: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files
+2023-12-05 08:03:24,790 INFO    SenderThread:34656 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/config.yaml config.yaml
+2023-12-05 08:03:24,790 INFO    SenderThread:34656 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/requirements.txt requirements.txt
+2023-12-05 08:03:24,791 INFO    SenderThread:34656 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-metadata.json wandb-metadata.json
+2023-12-05 08:03:24,791 INFO    SenderThread:34656 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log output.log
+2023-12-05 08:03:24,812 INFO    SenderThread:34656 [dir_watcher.py:finish():402] scan save: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json wandb-summary.json
+2023-12-05 08:03:24,819 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 10
+2023-12-05 08:03:24,827 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:24,829 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 10
+2023-12-05 08:03:24,831 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:24,832 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-05 08:03:24,832 INFO    SenderThread:34656 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-05 08:03:25,214 INFO    wandb-upload_1:34656 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/config.yaml
+2023-12-05 08:03:25,781 INFO    wandb-upload_0:34656 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/requirements.txt
+2023-12-05 08:03:25,833 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: status_report
+2023-12-05 08:03:26,149 INFO    wandb-upload_3:34656 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/wandb-summary.json
+2023-12-05 08:03:26,173 INFO    wandb-upload_2:34656 [upload_job.py:push():131] Uploaded file /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/files/output.log
+2023-12-05 08:03:26,373 INFO    Thread-11 (_thread_body):34656 [sender.py:transition_state():613] send defer: 11
+2023-12-05 08:03:26,374 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:26,377 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 11
+2023-12-05 08:03:26,378 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:26,378 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-05 08:03:26,378 INFO    SenderThread:34656 [file_pusher.py:join():181] waiting for file pusher
+2023-12-05 08:03:26,378 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 12
+2023-12-05 08:03:26,379 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:26,379 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 12
+2023-12-05 08:03:26,382 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:26,382 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-05 08:03:26,382 INFO    SenderThread:34656 [file_stream.py:finish():595] file stream finish called
+2023-12-05 08:03:27,032 INFO    SenderThread:34656 [file_stream.py:finish():599] file stream finish is done
+2023-12-05 08:03:27,032 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 13
+2023-12-05 08:03:27,032 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:27,035 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 13
+2023-12-05 08:03:27,036 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:27,036 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-05 08:03:27,036 INFO    SenderThread:34656 [sender.py:transition_state():613] send defer: 14
+2023-12-05 08:03:27,037 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: defer
+2023-12-05 08:03:27,037 INFO    HandlerThread:34656 [handler.py:handle_request_defer():170] handle defer: 14
+2023-12-05 08:03:27,038 DEBUG   SenderThread:34656 [sender.py:send():380] send: final
+2023-12-05 08:03:27,040 DEBUG   SenderThread:34656 [sender.py:send():380] send: footer
+2023-12-05 08:03:27,041 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: defer
+2023-12-05 08:03:27,041 INFO    SenderThread:34656 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-05 08:03:27,042 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-05 08:03:27,045 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: server_info
+2023-12-05 08:03:27,045 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: get_summary
+2023-12-05 08:03:27,045 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: sampled_history
+2023-12-05 08:03:27,048 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-05 08:03:27,050 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: poll_exit
+2023-12-05 08:03:27,051 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: server_info
+2023-12-05 08:03:27,059 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: job_info
+2023-12-05 08:03:27,231 DEBUG   SenderThread:34656 [sender.py:send_request():407] send_request: job_info
+2023-12-05 08:03:27,232 INFO    MainThread:34656 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-12-05 08:03:27,235 INFO    MainThread:34656 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-12-05 08:03:27,236 INFO    MainThread:34656 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-12-05 08:03:27,238 DEBUG   HandlerThread:34656 [handler.py:handle_request():144] handle_request: shutdown
+2023-12-05 08:03:27,239 INFO    HandlerThread:34656 [handler.py:finish():844] shutting down handler
+2023-12-05 08:03:28,061 INFO    WriterThread:34656 [datastore.py:close():294] close: /home/yishido/self_supervied/wandb/run-20231205_074411-3dfqm7b6/run-3dfqm7b6.wandb
+2023-12-05 08:03:28,231 INFO    SenderThread:34656 [sender.py:finish():1534] shutting down sender
+2023-12-05 08:03:28,231 INFO    SenderThread:34656 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-05 08:03:28,232 INFO    SenderThread:34656 [file_pusher.py:join():181] waiting for file pusher

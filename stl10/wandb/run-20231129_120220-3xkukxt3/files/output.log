@@ -1,0 +1,50 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Data loaded: there are 5000 train images.
+Starting training !
+--------------------------------------------------------------------------------------------
+0epoch
+Loss: -0.13154061138629913
+k-NN acc: 0.25725
+--------------------------------------------------------------------------------------------
+1epoch
+Loss: -0.40497079491615295
+k-NN acc: 0.266125
+--------------------------------------------------------------------------------------------
+2epoch
+Loss: -0.6164940595626831
+k-NN acc: 0.27675
+--------------------------------------------------------------------------------------------
+3epoch
+Loss: -0.7162672877311707
+k-NN acc: 0.27275
+--------------------------------------------------------------------------------------------
+4epoch
+Loss: -0.7732382416725159
+k-NN acc: 0.283875
+--------------------------------------------------------------------------------------------
+5epoch
+Loss: -0.8402208089828491
+k-NN acc: 0.268875
+--------------------------------------------------------------------------------------------
+6epoch
+Loss: -0.8500233292579651
+k-NN acc: 0.27575
+--------------------------------------------------------------------------------------------
+7epoch
+Loss: -0.8628026247024536
+k-NN acc: 0.274875
+--------------------------------------------------------------------------------------------
+8epoch
+Loss: -0.47793707251548767
+k-NN acc: 0.2395
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/loss_acc.py", line 312, in <module>
+    main()
+  File "/home/yishido/self_supervied/loss_acc.py", line 214, in main
+    loss = train(Train_loader,model,device,criterion,optimizer)
+  File "/home/yishido/self_supervied/loss_acc.py", line 237, in train
+    im_1 = images[0].to(device)
+KeyboardInterrupt
