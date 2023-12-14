@@ -112,17 +112,20 @@ def main():
     wandb.init(
         # set the wandb project where this run will be logged
         project="SimSiam",
-        name='test',
+        name='test_imagenet',
         # tags=["pretrained"],
 
         # track hyperparameters and run metadata
         config={
         "architecture": 'resnet',
-        "dataset": "STL10",
-        "epochs": 100,
+        "train_dataset": "imagenet",
+        "val_dataset": "stl10",
+        "train_batch_size": 128,
+        "train_epochs": 100,
+        "val_epochs": 100,
         })
 
-    device = 'cuda:2'
+    device = 'cuda:0'
     torch_fix_seed(32)
 
     # base_model = timm.create_model('vit_tiny_patch16_224', pretrained=False, num_classes=2048)
@@ -150,13 +153,17 @@ def main():
         transforms.ToTensor(),
         normalize
     ]
+    traindir = os.path.join("/home/yishido/DATA/imagenet", 'train')
+    Train_dataset = datasets.ImageFolder(
+                traindir,
+                transform=TwoCropsTransform(transforms.Compose(augmentation))) 
 
-    Train_dataset = datasets.STL10(
-        "/home/yishido/DATA",
-        download=True,
-        transform=TwoCropsTransform(transforms.Compose(augmentation)),
-        split="train"
-    )
+    # Train_dataset = datasets.STL10(
+    #     "/home/yishido/DATA",
+    #     download=True,
+    #     transform=TwoCropsTransform(transforms.Compose(augmentation)),
+    #     split="train"
+    # )
     acc_train_dataset = datasets.STL10(
         "/home/yishido/DATA",
         download=True,
@@ -178,21 +185,21 @@ def main():
 
     Train_loader = torch.utils.data.DataLoader(
             Train_dataset, 
-            batch_size=64,
+            batch_size=128,
             shuffle = True, 
             num_workers=8,
             pin_memory=True, )
     
     acc_train_loader = torch.utils.data.DataLoader(
             acc_train_dataset, 
-            batch_size=64, 
+            batch_size=128, 
             shuffle=True,
             num_workers=8,
             pin_memory=True, )
 
     acc_val_loader = torch.utils.data.DataLoader(
             acc_val_dataset, 
-            batch_size=64, 
+            batch_size=128, 
             shuffle=False,
             num_workers=8,
             pin_memory=True, )
@@ -208,13 +215,14 @@ def main():
     # val_accuracy_list = [] 
 
     print("Starting training !")
-    for epoch in range(0,20):
+    for epoch in range(0, 100):
         loss = train(Train_loader,model,device,criterion,optimizer)
         knn_acc, linear_acc = val(acc_train_loader,acc_val_loader,model,device)
         print("--------------------------------------------------------------------------------------------")
         print(f"{epoch}epoch")
         print(f"Loss: {loss}")
-        # print(f"k-NN acc: {acc}")
+        print(f"k-NN acc: {knn_acc}")
+        print(f"linear acc: {linear_acc}")
 
         wandb.log({"Loss": loss,
                    "k-NN acc": knn_acc,
@@ -262,7 +270,7 @@ def val(acc_train_loader,acc_val_loader,model,device):
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(params=logreg.parameters(), lr=3e-3)
 
-    (train_X, train_y, test_X, test_y) = get_features(model, acc_train_loader, acc_val_loader, 'cuda')
+    (train_X, train_y, test_X, test_y) = get_features(model, acc_train_loader, acc_val_loader, device)
 
     train_loader, test_loader = create_data_loaders_from_arrays(
         train_X, train_y, test_X, test_y, 2048)

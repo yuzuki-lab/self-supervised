@@ -1,0 +1,168 @@
+{
+    "os": "Linux-5.15.0-86-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-12-08T05:41:53.384784",
+    "startedAt": "2023-12-08T05:41:52.777079",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/yishido/self_supervied/base.py",
+    "codePathLocal": "base.py",
+    "codePath": "base.py",
+    "git": {
+        "remote": "git@github.com:yuzuki-lab/self-supervised.git",
+        "commit": "51cb0f104f923743fe4d5087cbcd127c6942ce41"
+    },
+    "email": "117724724+yuzuki-lab@users.noreply.github.com",
+    "root": "/home/yishido/self_supervied",
+    "host": "mach11",
+    "username": "yishido",
+    "executable": "/home/yishido/.pyenv/versions/3.10.12/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3304.3446666666664,
+        "min": 800.0,
+        "max": 4950.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 1104.272,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3400.0,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 97.87200164794922,
+            "used": 44.119625091552734
+        }
+    },
+    "gpu": "NVIDIA Graphics Device",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA Graphics Device",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 62.53921890258789
+    }
+}

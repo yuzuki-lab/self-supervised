@@ -1,0 +1,90 @@
+
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Data loaded: there are 5000 train images.
+Starting training !
+--------------------------------------------------------------------------------------------
+0epoch
+Loss: -0.019992627203464508
+k-NN acc: 0.343375
+linear acc: 0.4051724137931034
+--------------------------------------------------------------------------------------------
+1epoch
+Loss: -0.0542096272110939
+k-NN acc: 0.347625
+linear acc: 0.421875
+--------------------------------------------------------------------------------------------
+2epoch
+Loss: -0.07881160080432892
+k-NN acc: 0.3355
+linear acc: 0.4105603448275862
+--------------------------------------------------------------------------------------------
+3epoch
+Loss: -0.10436232388019562
+k-NN acc: 0.344
+linear acc: 0.41217672413793105
+--------------------------------------------------------------------------------------------
+4epoch
+Loss: -0.1320323944091797
+k-NN acc: 0.332875
+linear acc: 0.4234913793103448
+--------------------------------------------------------------------------------------------
+5epoch
+Loss: -0.15396061539649963
+k-NN acc: 0.3315
+linear acc: 0.43049568965517243
+--------------------------------------------------------------------------------------------
+6epoch
+Loss: -0.17477132380008698
+k-NN acc: 0.32725
+linear acc: 0.42780172413793105
+--------------------------------------------------------------------------------------------
+7epoch
+Loss: -0.2035333514213562
+k-NN acc: 0.325375
+linear acc: 0.42780172413793105
+--------------------------------------------------------------------------------------------
+8epoch
+Loss: -0.22130973637104034
+k-NN acc: 0.322375
+linear acc: 0.4369612068965517
+--------------------------------------------------------------------------------------------
+9epoch
+Loss: -0.24937951564788818
+k-NN acc: 0.31525
+linear acc: 0.43426724137931033
+--------------------------------------------------------------------------------------------
+10epoch
+Loss: -0.2745429575443268
+k-NN acc: 0.314625
+linear acc: 0.43157327586206895
+--------------------------------------------------------------------------------------------
+11epoch
+Loss: -0.29831457138061523
+k-NN acc: 0.312125
+linear acc: 0.42510775862068967
+Traceback (most recent call last):
+  File "/home/yishido/self_supervied/base.py", line 349, in <module>
+    main()
+  File "/home/yishido/self_supervied/base.py", line 213, in main
+    knn_acc, linear_acc = val(acc_train_loader,acc_val_loader,model,device)
+  File "/home/yishido/self_supervied/base.py", line 266, in val
+    (train_X, train_y, test_X, test_y) = get_features(model, acc_train_loader, acc_val_loader, device)
+  File "/home/yishido/self_supervied/base.py", line 327, in get_features
+    train_X, train_y = inference(train_loader, model, device)
+  File "/home/yishido/self_supervied/base.py", line 306, in inference
+    for step, (x, y) in enumerate(loader):
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/yishido/.pyenv/versions/3.10.12/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
